@@ -32,3 +32,12 @@ simpleDeviceOrientation.removeEvent(fn);
 ```javascript
 simpleDeviceOrientation.removeEvents();
 ```
+
+Example
+-------
+
+*Note: you need device, that supports Device Orientation event to view the example!*
+
+http://jsfiddle.net/Sf8me/show/light/
+
+![http://jsfiddle.net/Sf8me/show/light/](http://qrcoder.ru/code/?http%3A%2F%2Fjsfiddle.net%2FSf8me%2Fshow%2Flight%2F&10&0)
