@@ -28,7 +28,7 @@ window.simpleDeviceOrientation = {
 	},
 
 	/**
-	 *
+	 * Add (bind) simplified device orientation event
 	 * @param {Function} event fn(x, y), x and y both vary in range [0;1]
 	 */
 	addEvent: function(event)
@@ -38,6 +38,10 @@ window.simpleDeviceOrientation = {
 		if ( ! this.isActive) this._start();
 	},
 
+	/**
+	 * Remove (unbind) simplified device orientation event
+	 * @param {Function} event
+	 */
 	removeEvent: function(event)
 	{
 		var index = this._events.indexOf(event);
@@ -46,6 +50,9 @@ window.simpleDeviceOrientation = {
 		if (this._events.length == 0 && this.isActive) this._stop();
 	},
 
+	/**
+	 * Remove all events
+	 */
 	removeEvents: function()
 	{
 		this._events.length = 0;
